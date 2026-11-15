@@ -2,7 +2,9 @@
 
 几个 DSH 插件的主工作区。插件源码仍然留在各自仓库里，这个仓库只承担三件事：**工作目录、共享文档、跨仓库脚本**。
 
-> 这是演练骨架，还没有 GitHub remote。`plugins/` 下的三个目录是 `git submodule add` 从各自 origin 克隆的副本；现有的四个开发目录一个都没动。
+> 这是演练骨架，还没有 GitHub remote。`plugins/` 下三个目录是从现有四个开发目录**本地克隆**后接成子模块的（当时 GitHub HTTPS 克隆被重置），所以内容和本机 `develop` 一致；现有四个开发目录一个都没动。
+>
+> 子模块的 `.gitmodules` URL 用 HTTPS（新机器无密钥也能拉），子模块自己的 `origin` 保留 SSH（推送照旧）。
 
 ## 目录
 
