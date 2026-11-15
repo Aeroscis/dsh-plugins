@@ -10,3 +10,7 @@
 	path = plugins/dsh-run-deck
 	url = https://github.com/Aeroscis/dsh-run-deck.git
 	branch = develop
+[submodule "plugins/dsh-task-orchestrator"]
+	path = plugins/dsh-task-orchestrator
+	url = https://github.com/Aeroscis/dsh-task-orchestrator.git
+	branch = develop

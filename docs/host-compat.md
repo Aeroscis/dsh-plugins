@@ -8,7 +8,7 @@ node scripts/compat-all.mjs
 
 - `--json`：机器可读
 - `--quiet`：只在有问题时输出（给定时任务用）
-- `--also <路径>`：补一个还没挂成子模块的仓库，例如 `--also ..\dsh-task-orchestrator`
+- `--also <路径>`：补一个没挂成子模块的仓库，例如 `--also ..\某个插件仓库`
 
 ## 退出码即结论
 
