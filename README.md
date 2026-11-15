@@ -64,7 +64,8 @@ git clone --recurse-submodules <仓库地址>
 ## 现状
 
 - [x] 三个子模块已挂，`.gitmodules` 里 `branch = develop`
-- [ ] 建 GitHub 仓库并关联 remote
+- [x] GitHub remote：`git@github.com:Aeroscis/dsh-plugins.git`，`main` 已推送
+- [x] 新机器路径已验证：`git clone --recurse-submodules` 后直接 `node scripts/compat-all.mjs` 通过（宿主 0.2.2-rc.3）
 - [ ] `dsh-taskoutsource`：建私有仓库挂成子模块，或留在仓库外
 - [ ] 决定集市条目是否重指到 `tree/main/plugins/<name>`（格式见 `docs/marketplace.md`）
 - [ ] 把现有四个开发目录换成这里的位置，并用本插件重绑工作区
