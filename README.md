@@ -18,10 +18,10 @@ scripts/compat-all.mjs       跨仓库的宿主兼容检查
 AGENTS.md                    会话级约定
 ```
 
-`dsh-taskoutsource` 还没有 remote（`@local/…`、无 `.github`），submodule 装不进来。暂时从仓库外补：
+`dsh-task-orchestrator`（原名 `dsh-taskoutsource`）有自己的 GitHub 仓库，但还没挂成子模块；包名仍是 `@local/…`，没有 npm 发布，也没有 `.github` workflow。暂时从仓库外补：
 
 ```sh
-node scripts/compat-all.mjs --also ..\dsh-taskoutsource
+node scripts/compat-all.mjs --also ..\dsh-task-orchestrator
 ```
 
 ## 日常
@@ -67,7 +67,7 @@ git clone --recurse-submodules <仓库地址>
 - [x] 三个子模块已挂，`.gitmodules` 里 `branch = develop`
 - [x] GitHub remote：`git@github.com:Aeroscis/dsh-plugins.git`，`main` 已推送
 - [x] 新机器路径已验证：`git clone --recurse-submodules` 后直接 `node scripts/compat-all.mjs` 通过（宿主 0.2.2-rc.3）
-- [ ] `dsh-taskoutsource`：建私有仓库挂成子模块，或留在仓库外
+- [ ] `dsh-task-orchestrator`：先把 GitHub 仓库改名，再挂成第 4 个子模块
 - [ ] 决定集市条目是否重指到 `tree/main/plugins/<name>`（格式见 `docs/marketplace.md`）
 - [ ] 把现有四个开发目录换成这里的位置，并用本插件重绑工作区
 - [ ] 把 `.dsh/memory` 里跨机器还有用的结论搬进 `docs/`
