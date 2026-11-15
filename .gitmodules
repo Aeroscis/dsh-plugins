@@ -1,0 +1,12 @@
+[submodule "plugins/dsh-workspace-manager"]
+	path = plugins/dsh-workspace-manager
+	url = https://github.com/Aeroscis/dsh-workspace-manager.git
+	branch = develop
+[submodule "plugins/dsh-temptask"]
+	path = plugins/dsh-temptask
+	url = https://github.com/Aeroscis/dsh-temptask.git
+	branch = develop
+[submodule "plugins/dsh-run-deck"]
+	path = plugins/dsh-run-deck
+	url = https://github.com/Aeroscis/dsh-run-deck.git
+	branch = develop
