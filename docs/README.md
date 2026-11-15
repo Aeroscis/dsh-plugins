@@ -4,6 +4,7 @@
 
 - `host-compat.md`：宿主升级时怎么过一遍
 - `marketplace.md`：集市条目的格式，含 monorepo 子目录写法
+- `build-artifacts.md`：各插件的产物入库情况与构建方式（决定新克隆能不能直接跑）
 
 不放：某个插件的设计细节、面板交互、内部实现——那些属于它自己仓库里的 `docs/` 和 README。
 

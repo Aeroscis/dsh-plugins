@@ -6,7 +6,7 @@
 
 - 插件目录必须是 `plugins/`、`packages/`、`apps/` 的直接子目录——集市校验只从这三处读 `dsh.bundle`。
 - 主仓库只放工作区、共享文档、跨仓库脚本，不放插件源码。
-- 每个包没有 `dependencies` / `devDependencies`，构建产物（`index.js`、`client.js`、`lib/*.js`）入库，checkout 完就能跑。
+- 依赖与产物形态各仓库不同：workspace-manager 零依赖、产物入库；temptask 有 `typescript`/`react` 的 devDependencies、产物入库；run-deck 的产物不入库，必须 `npm install && npm run build`。详见 `docs/build-artifacts.md`。
 
 ## 提交
 

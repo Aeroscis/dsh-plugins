@@ -55,11 +55,12 @@ git pull --recurse-submodules
 git clone --recurse-submodules <仓库地址>
 ```
 
-然后手工补三件事（git 覆盖不到）：
+然后手工补四件事（git 覆盖不到）：
 
-1. DSH profile 的 `~/.dsh/profiles/desktop/package.json` 里，三个 `link:` 指到新绝对路径，再 `pnpm install`。
-2. 重启 DSH web（宿主路由只在进程启动时挂载）。
-3. 侧栏工作区记录用本插件「修改路径」重绑到新目录。
+1. 按 [docs/build-artifacts.md](docs/build-artifacts.md) 备产物：`dsh-run-deck` 必须 `npm install && npm run build`（`lib/`、`client/client.js` 不入库）；其余 checkout 完即可。
+2. DSH profile 的 `~/.dsh/profiles/desktop/package.json` 里，三个 `link:` 指到新绝对路径，再 `pnpm install`。
+3. 重启 DSH web（宿主路由只在进程启动时挂载；换了装载路径本来也要重启）。
+4. 侧栏工作区记录用本插件「修改路径」重绑到新目录。
 
 ## 现状
 
