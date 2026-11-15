@@ -19,7 +19,7 @@ scripts/compat-all.mjs       跨仓库的宿主兼容检查
 AGENTS.md                    会话级约定
 ```
 
-四个插件都是子模块，各自仓库独立；`dsh-task-orchestrator` 的包名还是 `@local/…`、没有 npm 发布，但代码在它自己的公开仓库里。有个还没搬进来的插件仓库，可以用 `--also` 从仓库外补：
+四个插件都是子模块，各自仓库独立；`dsh-task-orchestrator` 的包名还是 `@local/…`、没有 npm 发布，仓库目前是**私有**的——所以 `git clone --recurse-submodules` 需要本机已有 GitHub 凭据（`gh auth login` 或 Git Credential Manager），否则那个子模块会拉不下来。有个还没搬进来的插件仓库，可以用 `--also` 从仓库外补：
 
 ```sh
 node scripts/compat-all.mjs --also ..\某个别的插件仓库
