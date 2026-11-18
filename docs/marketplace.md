@@ -39,4 +39,13 @@ category: ui
 
 ## 当前状态
 
-三个插件已经各有条目（workspace-manager、temptask；run-deck 的提交还没合进 main）。是否重指到主仓库子目录，等主仓库定型后再决定，重指本身不改 npm 版本。
+三个插件各有独立仓库条目：workspace-manager（`ui`）、temptask（`session`）、run-deck（`dev`）。
+run-deck 的条目在 PR [awesome-dsh-plugin#16670](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/16670)，2026-11-18 提交，待合并。
+
+是否重指到主仓库子目录，等主仓库定型后再决定，重指本身不改 npm 版本。
+
+## 条目与代码要一致
+
+市场评审会拿条目里的描述逐句核对代码，**夸大是打回的主要原因**。写 run-deck 那条时就踩到一次：
+初稿写了「run / stop / rerun」，但 `rerun` 只存在于 `/run-deck` 命令与 tool 里，按钮条上点不了，
+于是改成「点一下跑、再点停」。写条目时每个动词都要能在界面上按出来，别把宿主 API 的能力算进条目。
